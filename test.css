@@ -20,17 +20,8 @@
   }
 
     /* Style the last link inside the navigation bar right side*/
-  .rightNav{
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    margin-right: 3%;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .log{
+
+    .topnav .log{
     float: right;
     display: block;
     text-align: center;
