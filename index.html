@@ -39,7 +39,7 @@
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 <div id="id01" class="modal">
   
-    <form class="modal-content animate" action="./Login Home Page/loggedInHome">
+    <form class="modal-content animate" >
   
       <div class="container">
         <label for="uname"><b>Username</b></label>
@@ -48,7 +48,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
           
-        <button type="submit">Login</button>
+        <button type="submit" onclick="window.location.href='./Login Home Page/loggedInHome';">Login</button>
         <a href class="leftNav"="./Login Home Page/loggedInHome">RamCentral</a>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
