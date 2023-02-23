@@ -1,0 +1,92 @@
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: darkgreen;
+    position:fixed;
+    z-index: +1;
+    top:0%;
+    width:100%;
+  }
+  
+  /* Style the first three links inside the navigation bar left side */
+  .leftNav {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+    /* Style the last link inside the navigation bar right side*/
+  .rightNav{
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    margin-right: 3%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover that are <a href> tags */
+  .topnav a:hover {
+    background-color: gold;
+    color: black;
+  }
+  
+  
+  /* Style the search box inside the navigation bar */
+  #search[type=text] {
+    padding: 4px;
+    border: none;
+    margin-top: 9px;
+    margin-left: 5%;
+    font-size: 17px;
+  }
+
+  #titleHeader{
+    margin-top: 14.25px;
+    color: white;
+    float:left;
+    margin-left: 2%;
+    margin-right: 1%;
+    font-size: 16px;
+  }
+  
+  #icon:hover{
+    background-color: darkgoldenrod;
+  }
+
+  #icon{
+    padding: 4px;
+    border: none;
+    margin-top: 9px;
+    margin-right: 5%;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  /*Clearing search bar after searching*/
+  #icon::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .topnav a, #search[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    #search[type=text] {
+      border: 1px solid #ccc;
+    }
+ 

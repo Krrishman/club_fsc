@@ -1,0 +1,31 @@
+.container1{
+    background-color: green;
+}
+.membership img{
+    background-color: rgb(8, 8, 8);
+    padding: 5%;
+    width: 200px;
+    height: 100%;
+}
+
+.textOverlay {
+    position: absolute;
+    top:52%;
+    z-index: 1;
+    margin:auto;
+    background-color: yellow; 
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 200px;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.5 ease;
+    padding: 50px;
+    border-width: 10px;
+    text-align: center;
+  }
+  
+  .membership:hover .textOverlay{
+    opacity: 1;
+  }
+ 

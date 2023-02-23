@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Welcome To RamCentral</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="test.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="javascript.css">
+        <link rel="stylesheet" href="login.css">
+
+</head>
+
+<header>
+    <div class="topnav">
+        <!--<p id="titleHeader" style="display: inline;">RamCentral</p>-->
+        <a href class="leftNav"="RamCentral#">RamCentral</a>
+        <a href class="leftNav"="index.html"> Home</a>
+        <a href class="leftNav"="#about">About</a>
+        <a href class="leftNav"="#contact">Contact Us</a>
+        <a href class="leftNav"="#transaction">Transactions</a>
+
+        <button class="log" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        
+        <form style="display: inline;" action="test.html" method="POST">
+            <input style="background-color: lightgreen; border-radius: 2px;" id="search" type="text" placeholder="Search">
+            <button id="icon" type="submit" style="border-radius: 2px;"><i class="fa fa-search"></i>    </form>
+        </form>
+      </div>
+</header>
+       
+<!--Section for picture and text in picture-->
+        
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="C:\Users\Dadavai\Documents\Github\html\Login Home Page\loggedInHome.html" method="post">
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <a href class="leftNav"="/Login Home Page/loggedInHome.html">RamCentral</a>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+  
+
+
+<div id="container1">
+            <!-- Begin Image -->
+            <!--<img id="fscImage" style="width:100%;" src="Webpage1/FSC_College3.jpg" alt="Farmingdale State College">-->
+
+            <!--First div tag is used to define the entire are the dynamic images used in slideshow-->
+            
+
+            <br><br><br><br><p><h1 style="color:yellow; text-align: center;">Join The Club Or Event You Like</h1></p>
+    <div class="slideshow">
+        <!--Second div class will be used to define the amount of images being used and control-->
+        <div class="mySlides fade">
+            <!--Third and fourth div classes are focused on individual images configurations themselves and the text displayed-->
+            <div class="pictureNum">1 / 3</div>
+            <img src="Webpage1/FSC_College.jpg" style="width:100%">
+            <div class="text">Farmingdale State College Back View</div>
+            </div>
+            
+            <div class="mySlides fade">
+            <div class="pictureNum">2 / 3</div>
+            <img src="Webpage1/FSC_College2.jpg" style="width:100%">
+            <div class="text" style="color:yellow">Farmingdale State College Campus Center</div>
+            </div>
+            
+            <div class="mySlides fade">
+            <div class="pictureNum">3 / 3</div>
+            <img src="Webpage1/FSC_College3.jpg" style="width:100%">
+            <div class="text">Farmingdale State College Fountain</div>
+            </div>
+            
+            <!--a onclick tags needed to allow user to click on next image by using arrow icon-->
+            <a class="previous" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+
+
+            <!-- End Image -->
+            
+            
+            <!--<h3 id="text1">JOIN THE CLUB YOU LIKE</h3>
+            <!--<p id="line1"><b>_______________________________________________________________________</b></p>
+            <h4 id="text2"><b>EXPLORE UNIQUE OPPORTUNITIES AT FARMINGDALE STATE COLLEGE</b></h4>
+            <p id="line2"><b>_______________________________________________________________________</b></p>-->
+        </div>
+<!--Section for events and clubs webpage to go to-->
+        <div id="container2">
+            <table id="bodyTable" cellspacing="25" style="margin-left: 20%; margin-right: 20%;">
+                <tr>
+                    <td class="squares">
+                        
+                        <img class="icons" src="Webpage1/leaf.png" style="width:50%;" alt="Image">
+                        <p>
+                            <a href="https://www.google.com">FIND AN ORGANIZATION</a><br>
+                            Join a new organization,<br>
+                            discussion, group message,<br>
+                            or news post
+                        </p>
+                    </td>
+                    <td class="squares">
+                        <img class="icons"src="Webpage1/sun.png" style="width:50%;" alt="Image">
+                        <p><a href="https://www.google.com">ATTEND AN EVENT</a><br>    
+                            Discover events happening<br> 
+                            on campus or in your area
+                        </p>                       
+                    </td>
+                    <td class="squares">
+                        <img class="icons" style="width:50%;" src="Webpage1/involvement.png" alt="Image">
+                        <p><a href="https://www.google.com">TRACK YOUR INVOLVEMENT</a><br>
+                            Record your memberships or <br>
+                            activities to showcase<br>
+                            your involvement
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+<!--Section for list of clubs and events for user to view-->
+        <p></p>
+        <div id="container3">
+            <table id="linkToSites" style="width:90%; background-color: orange; margin-left: 5%; margin-right: 5%;">
+                <tr>
+                    <td class="row1">
+                        <h2><a style="text-decoration: none;" href="https://www.google.com">Events</a></h2>
+                    </td>
+                    <td class="row1">
+                        <h2><a style="text-decoration: none;" href="https://www.google.com">Organizations</a></h2>
+                    </td>
+                    <td class="row1">
+                        <h2><a style="text-decoration: none;" href="https://www.google.com">Latest News</a></h2>
+                    </td>
+                </tr>
+            </table>
+            <table style="background-color: orange; width:90%; margin-left: 5%; margin-right: 5%;">
+                <tr style="margin-left: 5%;">
+                    <td style="background-color: yellow; border-radius: 10px;" cellspacing="25">
+                        <img style="width: 100%; padding:5%"src="Webpage1/FSC_Event.png" alt="Event">
+                        <p style="font-size: 10px; margin-left: 5%" ><b>Farmingdale State Esports Overwatch 2 Practice</b></p>
+                        <p style="font-size: 10px; margin-left: 5%; font-weight: lighter;"><i class="fa fas fa-map-marker-alt"></i> Esports Area, Quintyne Hall</p>
+                        <p style="font-size: 10px; margin-left: 5%; font-weight: lighter;"><i class="fa fa-calendar"></i> Thursday, Feburary 23 at 5:00PM EST</p>
+                        <br><br><br><br> 
+                    </td>
+                    <td style="background-color: yellow; border-radius: 10px;">
+                        <img style="width: 100%; padding:5%;"src="Webpage1/FSC_Event.png" alt="Event">
+                        <p style="font-size: 10px; margin-left: 5%" ><b>Farmingdale State Esports Super Smash Bros.</b></p>
+                        <p style="font-size: 10px; margin-left: 5%; font-weight: lighter;"><i class="fa fas fa-map-marker-alt"></i> Esports Area, Quintyne Hall</p>
+                        <p style="font-size: 10px; margin-left: 5%; font-weight: lighter;"><i class="fa fa-calendar"></i> Thursday, Feburary 23 at 7:00PM EST</p>
+                        <br><br><br><br>                    </td>
+                    <td style="background-color: yellow; border-radius: 10px;">
+                        <img style="width: 100%; padding:5%"src="Webpage1/FSC_Event.png" alt="Event">
+                        <p style="font-size: 10px; margin-left: 5%" ><b>Farmingdale State Esports Call of Duty Warzone</b></p>
+                        <p style="font-size: 10px; margin-left: 5%; font-weight: lighter;"><i class="fa fas fa-map-marker-alt"></i> Esports Area, Quintyne Hall</p>
+                        <p style="font-size: 10px; margin-left: 5%; font-weight: lighter;"><i class="fa fa-calendar"></i> Friday, Feburary 24 at 5:00PM EST</p>
+                        <br><br><br><br>                     </td>
+                    <td style="background-color: yellow; border-radius: 10px;">
+                        <img style="width: 100%; padding:5%;"src="Webpage1/FSC_Event.png" alt="Event">
+                        <p style="font-size: 10px; margin-left: 5%" ><b>Farmingdale State Esports Rocket League</b></p>
+                        <p style="font-size: 10px; margin-left: 5%; font-weight: lighter;"><i class="fa fas fa-map-marker-alt"></i> Esports Area, Quintyne Hall</p>
+                        <p style="font-size: 10px; margin-left: 5%; font-weight: lighter;"><i class="fa fa-calendar"></i> Tuesday, March 1 at 7:00PM EST</p>
+                        <br><br><br><br>                     
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <br></br>
+        <br></br>
+        <footer>
+            <div class="footer1">
+                
+                <p class="info">RamCentral is a website dedicated for providing<br>
+                students to ability to be more involved around campus<br>
+                and connect with others. To learn more about RamCentral,<br>
+                visit the about page<br><br>
+                Address: 2350 Broadhollow RoadFarmingdale, NY 11735-1021
+                
+                </p>
+                <table id="hyperlinksTable">
+                    <tr class="hyperlinksRow">
+                        <td class="hyperlinkData">Academic Programs</td>
+                        <td class="hyperlinkData">Accrediation</td>
+                        <td class="hyperlinkData">News and Media Center</td>
+                    </tr>
+                    <tr>
+                        <td class="hyperlinkData">Campus Calendar</td>
+                        <td class="hyperlinkData">Admissions Office</td>
+                        <td class="hyperlinkData">Disability Services</td>
+                    </tr>
+                </table class="hyperlinksRow">
+                <p class="icons">
+                    <a class="footerIcon" href="https://www.instagram.com/farmingdalesc/?hl=en"><i style="padding:3px;"class="fa fa-instagram"></i></a>
+                    <a class="footerIcon" href="https://www.facebook.com/farmingdale/"><i style="padding:3px;"class="fa fa-facebook"></i></a>
+                    <a class="footerIcon" href="https://twitter.com/FarmStateRams?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i style="padding:3px;"class="fa fa-twitter-square"></i></a>
+                    <a class="footerIcon" href="https://www.youtube.com/@FarmingdaleEdu1912"><i style="padding:3px;"class="fa fa-youtube"></i></a>
+                <p>
+            </div>
+        </footer> 
+    </body>
+</html>
